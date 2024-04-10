@@ -57,7 +57,13 @@ struct Const {
         ["icon": "arrow.up.arrow.down",
          "color": UIColor.systemRed,
          "title": "Lower or Higher",
-         "id": "HigherLowerViewController"]
+         "id": "HigherLowerViewController"],
+        
+        ["icon": "calendar",
+         "color": UIColor.systemIndigo,
+         "title": "Birthday Charades",
+         "id": "BirthDayCharadesViewController"]
+        
 
     ]
 

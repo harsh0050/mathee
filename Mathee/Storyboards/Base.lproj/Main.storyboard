@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8u8-uX-CMh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8u8-uX-CMh">
     <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -457,6 +457,48 @@ Let me ask you a few questions...</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRm-7C-E5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1370.625" y="1263.3802816901409"/>
+        </scene>
+        <!--Birthday Charades View Controller-->
+        <scene sceneID="kc0-WF-Y2f">
+            <objects>
+                <viewController storyboardIdentifier="BirthdayCharadesViewController" id="TRD-wj-uc6" customClass="BirthdayCharadesViewController" customModule="Mathee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tU7-KB-nq5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick the number of days a week that you would like to go out " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drq-ls-YLF">
+                                <rect key="frame" x="16" y="389.66666666666669" width="343" height="49"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBy-z9-7Bt">
+                                <rect key="frame" x="127" y="707.33333333333337" width="121" height="54.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bde-nZ-DJY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bde-nZ-DJY" firstAttribute="trailing" secondItem="drq-ls-YLF" secondAttribute="trailing" constant="16" id="9B0-qs-FJd"/>
+                            <constraint firstItem="drq-ls-YLF" firstAttribute="centerY" secondItem="Bde-nZ-DJY" secondAttribute="centerY" id="Ii1-ao-nW5"/>
+                            <constraint firstItem="EBy-z9-7Bt" firstAttribute="centerX" secondItem="Bde-nZ-DJY" secondAttribute="centerX" id="JBL-Bc-xyC"/>
+                            <constraint firstItem="drq-ls-YLF" firstAttribute="leading" secondItem="Bde-nZ-DJY" secondAttribute="leading" constant="16" id="iwX-z4-fJd"/>
+                            <constraint firstItem="Bde-nZ-DJY" firstAttribute="bottom" secondItem="EBy-z9-7Bt" secondAttribute="bottom" constant="16" id="tqR-Mn-7dl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nN2-nu-qNj"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="drq-ls-YLF" id="CIi-gU-hAy"/>
+                        <outlet property="middleButton" destination="EBy-z9-7Bt" id="khd-2T-9uv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t00-Cb-j42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="3601"/>
         </scene>
     </scenes>
     <resources>

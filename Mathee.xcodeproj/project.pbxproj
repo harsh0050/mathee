@@ -27,6 +27,8 @@
 		33F3218B28384B2100385BBD /* MatheeScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3218A28384B2100385BBD /* MatheeScreenshots.swift */; };
 		33F3219428384F9600385BBD /* screenshots.sh in Resources */ = {isa = PBXBuildFile; fileRef = 33F3219328384F9600385BBD /* screenshots.sh */; };
 		33F4B87A2A073B0A0074AC91 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECBA0521AC1BAA003199CB /* Const.swift */; };
+		3A0DCB072BC728CF00308EB2 /* MathFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DCB062BC728CF00308EB2 /* MathFacts.swift */; };
+		3A0DCB092BC731C200308EB2 /* BirthdayCharadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DCB082BC731C200308EB2 /* BirthdayCharadesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		33F3218828384B2100385BBD /* MatheeScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatheeScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F3218A28384B2100385BBD /* MatheeScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatheeScreenshots.swift; sourceTree = "<group>"; };
 		33F3219328384F9600385BBD /* screenshots.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = screenshots.sh; sourceTree = "<group>"; };
+		3A0DCB062BC728CF00308EB2 /* MathFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFacts.swift; sourceTree = "<group>"; };
+		3A0DCB082BC731C200308EB2 /* BirthdayCharadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCharadesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 				33568B7620EC96B300690825 /* BookViewController.swift */,
 				33B727FA20EDC68800AF338A /* HigherLowerViewController.swift */,
 				33B9FDC820EDFC1500131038 /* MagicViewController.swift */,
+				3A0DCB082BC731C200308EB2 /* BirthdayCharadesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				33CF6B8C26F4434A002E5CA9 /* UIViewController+Extensions.swift */,
 				3386A109281A27B5009FCB7F /* UIFont+Extensions.swift */,
 				33364BEC2906696F00427C5C /* UIButton+Extensions.swift */,
+				3A0DCB062BC728CF00308EB2 /* MathFacts.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0DCB092BC731C200308EB2 /* BirthdayCharadesViewController.swift in Sources */,
 				3386A10A281A27B5009FCB7F /* UIFont+Extensions.swift in Sources */,
 				33568B7720EC96B300690825 /* BookViewController.swift in Sources */,
 				3388BFDD22E17644005B148B /* FormulaViewController.swift in Sources */,
@@ -340,6 +347,7 @@
 				33B9FDC920EDFC1500131038 /* MagicViewController.swift in Sources */,
 				334FEBD9288DDB9800CCC883 /* SpotItCell.swift in Sources */,
 				33CF6B8D26F4434A002E5CA9 /* UIViewController+Extensions.swift in Sources */,
+				3A0DCB072BC728CF00308EB2 /* MathFacts.swift in Sources */,
 				3392B0DC288D114500EE9525 /* UIView+Extensions.swift in Sources */,
 				33E32B9E288B4DA200CED09C /* Array+Extensions.swift in Sources */,
 				33B727FB20EDC68800AF338A /* HigherLowerViewController.swift in Sources */,
