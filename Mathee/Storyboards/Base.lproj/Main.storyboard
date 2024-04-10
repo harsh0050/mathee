@@ -362,7 +362,7 @@ Prepare to be amazed.</string>
                     </navigationItem>
                     <connections>
                         <outlet property="aboutButton" destination="iSG-Wt-4L5" id="PIY-Lc-BEr"/>
-                        <outlet property="mathFactLable" destination="DKA-F4-C8X" id="Tq7-mm-9qX"/>
+                        <outlet property="mathFactLabel" destination="DKA-F4-C8X" id="H3f-Wk-90Z"/>
                         <outlet property="myTableView" destination="bSL-S2-mJ9" id="LWa-JP-r1e"/>
                     </connections>
                 </viewController>

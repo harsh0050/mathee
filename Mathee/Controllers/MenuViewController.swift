@@ -18,7 +18,7 @@ class MenuViewController: UIViewController, UITableViewDataSource,
 
     @IBOutlet var myTableView: UITableView!
     @IBOutlet weak var aboutButton: UIBarButtonItem!
-    @IBOutlet weak var mathFactLable: UILabel!
+    @IBOutlet weak var mathFactLabel: UILabel!
     
     // MARK: Properties
 
@@ -65,14 +65,14 @@ class MenuViewController: UIViewController, UITableViewDataSource,
     
     func setMathFact(){
         let boldText = "Did you know? "
-        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: mathFactLable.font.pointSize)]
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: mathFactLabel.font.pointSize)]
         let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
 
         let fact = MathFacts.getRandomFact()
         let normalString = NSMutableAttributedString(string:fact)
 
         attributedString.append(normalString)
-        mathFactLable.attributedText = attributedString
+        mathFactLabel.attributedText = attributedString
     }
 
 
