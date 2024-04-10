@@ -18,8 +18,8 @@ class MenuViewController: UIViewController, UITableViewDataSource,
 
     @IBOutlet var myTableView: UITableView!
     @IBOutlet weak var aboutButton: UIBarButtonItem!
-
-
+    @IBOutlet weak var mathFactLable: UILabel!
+    
     // MARK: Properties
 
     let menuCell = "MenuCell"
@@ -59,6 +59,20 @@ class MenuViewController: UIViewController, UITableViewDataSource,
         aboutButton.image = UIImage(systemName: "ellipsis.circle")
 
         myTableView.reloadData()
+        setMathFact()
+        
+    }
+    
+    func setMathFact(){
+        let boldText = "Did you know? "
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: mathFactLable.font.pointSize)]
+        let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+
+        let fact = MathFacts.getRandomFact()
+        let normalString = NSMutableAttributedString(string:fact)
+
+        attributedString.append(normalString)
+        mathFactLable.attributedText = attributedString
     }
 
 
@@ -183,6 +197,13 @@ class MenuViewController: UIViewController, UITableViewDataSource,
             case "Lower or Higher":
                 let controller = storyboard.instantiateViewController(
                     withIdentifier: "HigherLowerViewController") as! HigherLowerViewController
+                controller.myTitle = cell.myLabel!.text
+                controller
+                    .myThemeColor = Const.dataSourceHome[indexPath.row]["color"] as? UIColor
+                self.navigationController!.pushViewController(controller, animated: true)
+            case "Birthday Charades":
+                let controller = storyboard.instantiateViewController(
+                    withIdentifier: "BirthdayCharadesViewController") as! BirthdayCharadesViewController
                 controller.myTitle = cell.myLabel!.text
                 controller
                     .myThemeColor = Const.dataSourceHome[indexPath.row]["color"] as? UIColor

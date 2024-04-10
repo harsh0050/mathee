@@ -46,7 +46,7 @@ class BirthdayCharadesViewController : UIViewController{
         let calender = Calendar.current
         let currentYear = calender.component(.year, from: currentDate)
         
-        let addIfBirthdayGone = 1769 + currentYear - 2020
+        let addIfBirthdayGone = 1770 + currentYear - 2020
         let addIfBirthdayComing = addIfBirthdayGone - 1
         
         self.trickTexts = [
